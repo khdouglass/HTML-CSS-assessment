@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Application Form</title>
+</head>
+<body>
+    <h1>Job Application Form</h1>
+    <p>Please enter the following information to start your application.</p>
+    <form action="/application-success" method="POST">
+        First Name: <input type="text" name="first_name" class="input_box">
+        <br><br>
+        Last Name: <input type="text" name="last_name" class="input_box" 
+                    id="last_name">
+        <br><br>        
+        Salary Requirement (in USD): <input type="number" name="last_name"
+                                      class="input_box">
+        <br><br>
+        Job Applying For:
+            <select name="job_title" class="input_box">
+                <option value="software_engineer">Software Engineer</option>
+                <option value="qa_manager">QA Manager</option>
+                <option value="product_manager">Product Manager</option>
+            </select>
+        <br><br>
+        <input type="submit" class="input_box">
+    </form>    
+</body>
+</html>
